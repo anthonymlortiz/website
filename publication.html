@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <title>Anthony Ortiz</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="owwwlab.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <meta name="description" content="A theme for faculty profile page" />
+        <meta name="keywords" content="faculty profile, theme,css, html, jquery, transition, transform, 3d, css3" />
+
+        <link rel="shortcut icon" href="../favicon.ico">
+
+        <!--CSS styles-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">  
+        <link rel="stylesheet" href="css/perfect-scrollbar-0.4.5.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
+
+        
+        <!--/CSS styles-->
+        <!--Javascript files-->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+        
+        <script type="text/javascript" src="js/modernizr.custom.63321.js"></script>
+        <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
+
+        <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+        <script type="text/javascript" src="js/masonry.min.js"></script>
+
+        <script type="text/javascript" src="js/perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+        
+        <script type="text/javascript" src="js/magnific-popup.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+        <!--/Javascript files-->
+
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <a href="#sidebar" class="mobilemenu"><i class="fa fa-reorder"></i></a>
+
+                        <div id="sidebar">
+                <div id="sidebar-wrapper">
+                    <div id="sidebar-inner">
+                        <!-- Profile/logo section-->
+                        <div id="profile" class="clearfix">
+                            <div class="portrate hidden-xs"></div>
+                            <div class="title">
+                                <h2>Anthony Ortiz</h2>
+                                <h3>Sr. Applied	Research Scientist Microsoft AI for Good Research</h3>
+                            </div>   
+                        </div>
+                        <!-- /Profile/logo section-->
+
+                         <!-- Main navigation-->
+                        <div id="main-nav">
+                            <ul id="navigation">
+								<li>
+                                  <a href="index.html">
+                                    <i class="fa fa-user"></i>
+                                    <div class="text">Home</div>
+                                  </a>
+                                </li>  
+                                
+                                <li>
+                                  <a href="projects.html">
+                                    <i class="fa fa-flask"></i>
+                                    <div class="text">Research</div>
+                                  </a>
+                                </li> 							
+                                
+                                <li>
+                                  <a href="publication.html">
+                                    <i class="fa fa-edit"></i>
+                                    <div class="text">Publications</div>
+                                  </a>
+                                </li> 
+
+								<li>
+                                  <a href="media.html">
+                                    <i class="fa fa-desktop"></i>
+                                    <div class="text">On The News</div>
+                                  </a>
+                                </li> 
+
+                                <li class="external">
+                                  <a href="resume.pdf">
+                                      <i class="fa fa-book"></i>
+                                      <div class="text">Curriculum Vitae</div>
+                                  </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /Main navigation-->
+                        <!-- Sidebar footer -->
+                        <div id="sidebar-footer">
+                            <div class="social-icons">
+                                <ul>
+									<li><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ"><i class="fab fa-scholar fa-sm"></i></li>
+                                    <li><a href="https://twitter.com/anthonymlortiz"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anthonyortizcepeda/"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+
+        
+                            <div id="copyright">©2022 Anthony Ortiz</div>
+                    
+                        </div>
+                        <!-- /Sidebar footer -->
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="main">
+            
+                <div id="publications" class="page">
+                    <div class="page-container">
+                        <div class="pageheader">
+                            <div class="headercontent">
+                                <div class="section-container">
+                                    <h2 class="title"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ"><b> Publications </b></a> </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagecontents">
+                            
+                            <div class="section color-1" id="filters">
+                                <div class="section-container">
+                                    <div class="row">
+                                        
+                                        <div class="col-md-3">
+                                            <h3>Filter by type:</h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+                                                <option class="filter" value="all" selected>All types</option>
+                                                <option class="filter" value="jpaper">Journal Papers</option>
+                                                <option class="filter" value="cpaper">Conference Papers</option>
+                                                <option class="filter" value="ppaper">Preprints</option>
+                                                <option class="filter" value="wpaper">Workshop Papers</option>
+                                                <!-- <option class="filter" value="report">Reports</option>
+                                                <option class="filter" value="tpaper">Technical Papers</option> -->
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="col-md-3" id="sort">
+                                            <span>Sort by year:</span>
+                                            <div class="btn-group pull-right"> 
+
+                                                <button type="button" data-sort="data-year" data-order="desc" class="sort btn btn-default"><i class="fa fa-sort-numeric-asc"></i></button>
+                                                <button type="button" data-sort="data-year" data-order="asc" class="sort btn btn-default"><i class="fa fa-sort-numeric-desc"></i></button>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section color-2" id="pub-grid">
+                                <div class="section-container">
+                                    
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+											
+												<div class="item mix ppaper" data-year="2022">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://arxiv.org/abs/2202.01340" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="https://arxiv.org/pdf/2202.01340.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">An Artificial Intelligence Dataset for Solar Energy Locations in India</h4>
+                                                        <div class="pubauthor"> <strong>Anthony Ortiz</strong>, Dhaval Negandhi, Sagar R Mysorekar, Joseph Kiesecker, Shivaprakash K Nagaraju, Caleb Robinson, Priyal Bhatia, Aditi Khurana, Jane Wang, Felipe Oviedo, Juan Lavista Ferres </div>
+                                                        <div class="pubcite"><span class="label label-warning">Preprint</span> arXiv preprint arXiv:2202.01340 </div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> Rapid development of renewable energy sources, particularly solar photovoltaics, is critical to mitigate climate change. As a result, India has set ambitious goals to install 300 gigawatts of solar energy capacity by 2030. Given the large footprint projected to meet these renewable energy targets the potential for land use conflicts over environmental and social values is high. To expedite development of solar energy, land use planners will need access to up-to-date and accurate geo-spatial information of PV infrastructure. The majority of recent studies use either predictions of resource suitability or databases that are either developed thru crowdsourcing that often have significant sampling biases or have time lags between when projects are permitted and when location data becomes available. Here, we address this shortcoming by developing a spatially explicit machine learning model to map utility-scale solar projects across India. Using these outputs, we provide a cumulative measure of the solar footprint across India and quantified the degree of land modification associated with land cover types that may cause conflicts. Our analysis indicates that over 74\% of solar development In India was built on landcover types that have natural ecosystem preservation, and agricultural values. Thus, with a mean accuracy of 92\% this method permits the identification of the factors driving land suitability for solar projects and will be of widespread interest for studies seeking to assess trade-offs associated with the global decarbonization of green-energy systems. </p>
+														</div>
+                                                </div>
+											
+												<div class="item mix jpaper" data-year="2022">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://www.nature.com/articles/s41598-022-05532-0" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Effective deep learning approaches for predicting COVID-19 outcomes from chest computed tomography volumes</h4>
+                                                        <div class="pubauthor"> <strong>Anthony Ortiz</strong>, Anusua Trivedi, Jocelyn Desbiens, Marian Blazes, Caleb Robinson, Sunil Gupta, Rahul Dodhia, Pavan K Bhatraju, W Conrad Liles, Aaron Lee, Juan M Lavista Ferres </div>
+                                                        <div class="pubcite"><span class="label label-warning">Journal Paper</span>  Scientific Reports</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> The rapid evolution of the novel coronavirus disease (COVID-19) pandemic has resulted in an urgent need for effective clinical tools to reduce transmission and manage severe illness. Numerous teams are quickly developing artificial intelligence approaches to these problems, including using deep learning to predict COVID-19 diagnosis and prognosis from chest computed tomography (CT) imaging data. In this work, we assess the value of aggregated chest CT data for COVID-19 prognosis compared to clinical metadata alone. We develop a novel patient-level algorithm to aggregate the chest CT volume into a 2D representation that can be easily integrated with clinical metadata to distinguish COVID-19 pneumonia from chest CT volumes from healthy participants and participants with other viral pneumonia. </p>
+														</div>
+                                                </div>
+											
+												<div class="item mix ppaper" data-year="2021">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://arxiv.org/abs/2111.08872" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="https://openreview.net/pdf?id=ZgV2C9NKk6Q" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">TorchGeo: deep learning with geospatial data</h4>
+                                                        <div class="pubauthor"> Adam J Stewart, Caleb Robinson, Isaac A Corley, <strong>Anthony Ortiz</strong>, Juan M Lavista Ferres, Arindam Banerjee </div>
+                                                        <div class="pubcite"><span class="label label-warning">Preprint</span>  arXiv preprint arXiv:2111.08872</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> Remotely sensed geospatial data are critical for applications including precision agriculture, urban planning, disaster monitoring and response, and climate change research, among others. Deep learning methods are particularly promising for modeling many remote sensing tasks given the success of deep neural networks in similar computer vision tasks and the sheer volume of remotely sensed imagery available. However, the variance in data collection methods and handling of geospatial metadata make the application of deep learning methodology to remotely sensed data nontrivial. For example, satellite imagery often includes additional spectral bands beyond red, green, and blue and must be joined to other geospatial data sources that can have differing coordinate systems, bounds, and resolutions. To help realize the potential of deep learning for remote sensing applications, we introduce TorchGeo, a Python library for integrating geospatial data into the PyTorch deep learning ecosystem. TorchGeo provides data loaders for a variety of benchmark datasets, composable datasets for generic geospatial data sources, samplers for geospatial data, and transforms that work with multispectral imagery. TorchGeo is also the first library to provide pre-trained models for multispectral satellite imagery (e.g. models that use all bands from the Sentinel 2 satellites), allowing for advances in transfer learning on downstream remote sensing tasks with limited labeled data. We use TorchGeo to create reproducible benchmark results on existing datasets and benchmark our proposed method for preprocessing geospatial imagery on-the-fly. </p>
+														</div>
+                                                </div>
+											
+												<div class="item mix cpaper" data-year="2021">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://arxiv.org/abs/2104.11757" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="https://arxiv.org/pdf/2104.11757.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Becoming Good at AI for Good</h4>
+                                                        <div class="pubauthor"> Meghana Kshirsagar, Caleb Robinson, Siyu Yang, Shahrzad Gholami, Ivan Klyuzhin, Sumit Mukherjee, Md Nasir, <strong>Anthony Ortiz</strong>, Felipe Oviedo, Darren Tanner, Anusua Trivedi, Yixi Xu, Ming Zhong, Bistra Dilkina, Rahul Dodhia, Juan M Lavista Ferres</div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span>  Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>AI for good (AI4G) projects involve developing and applying artificial intelligence (AI) based solutions to further goals in areas such as sustainability, health, humanitarian aid, and social justice. Developing and deploying such solutions must be done in collaboration with partners who are experts in the domain in question and who already have experience in making progress towards such goals. Based on our experiences, we detail the different aspects of this type of collaboration broken down into four high-level categories: communication, data, modeling, and impact, and distill eleven takeaways to guide such projects in the future. We briefly describe two case studies to illustrate how some of these takeaways were applied in practice during our past collaborations.</p>
+														</div>
+                                                </div>
+											
+											
+												<div class="item mix cpaper" data-year="2021">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://arxiv.org/abs/2101.07235" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="https://arxiv.org/pdf/2101.07235.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Reducing bias and increasing utility by federated generative modeling of medical images using a centralized adversary</h4>
+                                                        <div class="pubauthor"> Jean-Francois Rajotte, Sumit Mukherjee, Caleb Robinson, <strong>Anthony Ortiz</strong>, Christopher West, Juan M Lavista Ferres, Raymond T Ng </div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span>  Proceedings of the Conference on Information Technology for Social Good</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>A major roadblock in machine learning for healthcare is the inability of data to be shared broadly, due to privacy concerns. Privacy preserving synthetic data generation is increasingly being seen as a solution to this problem. However, since healthcare data often has significant site-specific biases, it has motivated the use of federated learning when the goal is to utilize data from multiple sites for machine learning model training. Here, we introduce FELICIA (FEderated LearnIng with a CentralIzed Adversary), a generative mechanism enabling collaborative learning. It is a generalized extension of the (local) PrivGAN mechanism allowing to take into account the diversity (non-IID) nature of the federated sites. In particular, we show how a site with limited and biased data could benefit from other sites while keeping data from all the sources private.</p>
+														</div>
+                                                </div>
+												
+												<div class="item mix ppaper" data-year="2021">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://arxiv.org/abs/2106.15448" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="https://arxiv.org/pdf/2106.15448.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Detecting Cattle and Elk in the Wild from Space</h4>
+                                                        <div class="pubauthor"><strong>Anthony Ortiz</strong>, Caleb Robinson, Lacey Hughey, Jared A Stabach, Juan M Lavista Ferres </div>
+                                                        <div class="pubcite"><span class="label label-warning">Preprint</span>  arXiv preprint arXiv:2106.15448</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Localizing and counting large ungulates -- hoofed mammals like cows and elk -- in very high-resolution satellite imagery is an important task for supporting ecological studies. Prior work has shown that this is feasible with deep learning based methods and sub-meter multi-spectral satellite imagery. We extend this line of work by proposing a baseline method, CowNet, that simultaneously estimates the number of animals in an image (counts), as well as predicts their location at a pixel level (localizes). We also propose an methodology for evaluating such models on counting and localization tasks across large scenes that takes the uncertainty of noisy labels and the information needed by stakeholders in ecological monitoring tasks into account. Finally, we benchmark our baseline method with state of the art vision methods for counting objects in scenes. We specifically test the temporal generalization of the resulting models over a large landscape in Point Reyes Seashore, CA. We find that the LC-FCN model performs the best and achieves an average precision between 0.56 and 0.61 and an average recall between 0.78 and 0.92 over three held out test scenes.</p>
+														</div>
+                                                </div>
+											
+											
+												<div class="item mix cpaper" data-year="2021">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://dl.acm.org/doi/abs/10.1145/3460112.3471952" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="https://arxiv.org/pdf/2103.09787" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Temporal cluster matching for change detection of structures from satellite imagery</h4>
+                                                        <div class="pubauthor">Caleb Robinson, <strong>Anthony Ortiz</strong>, Juan M Lavista Ferres, Brandon Anderson, Daniel E Ho </div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span>  ACM SIGCAS Conference on Computing and Sustainable Societies, 2021</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Longitudinal studies are vital to understanding dynamic changes of the planet, but labels (eg, buildings, facilities, roads) are often available only for a single point in time. We propose a general model, Temporal Cluster Matching (TCM), for detecting building changes in time series of remotely sensed imagery when footprint labels are observed only once. The intuition behind the model is that the relationship between spectral values inside and outside of building’s footprint will change when a building is constructed (or demolished). For instance, in rural settings, the pre-construction area may look similar to the surrounding environment until the building is constructed. Similarly, in urban settings, the pre-construction areas will look different from the surrounding environment until construction.</p>
+														</div>
+                                                </div>
+											
+												<div class="item mix cpaper" data-year="2021">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="ieeexplore.ieee.org/abstract/document/9554869" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                           
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">From Local Algorithms to Global Results: Human-Machine Collaboration for Robust Analysis of Geographically Diverse Imagery</h4>
+                                                        <div class="pubauthor">Nebojsa Jojic, Nikolay Malkin, Caleb robinson, <strong>Anthony Ortiz</strong> </div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span>  2021 IEEE International Geoscience and Remote Sensing Symposium (IGARSS), 2021</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Modern deep learning-based semantic segmentation models and traditional pattern matching segmentation methods demonstrate similar failure modes in mapping land cover from diverse satellite/aerial imagery. The key problem is that these models mostly respond to textures and colors which, locally, do tend to have consistent land cover labels, but may resemble very different labels in imagery acquired farther away, with a different sensor, or under new imaging conditions. One way to resolve this issue is to endow the algorithms with higher-level, human-like reasoning abilities - e.g., an awareness that houses are connected to roads with driveways, that roads connect towns, and that bridges cast shadows - and the mechanism for tracking such objects across larger areas in order to resolve ambiguity. We propose an alternative approach of human-machine collaboration for creating land cover maps</p>
+														</div>
+                                                </div>
+											
+												<div class="item mix jpaper" data-year="2021">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Automatic lesion detection and segmentation in PSMA PET/CT images using deep neural networks</h4>
+                                                        <div class="pubauthor">Y Xu, I Klyuzhin, S Harsini, <strong>A Ortiz</strong>, A Rahmim, JL Ferres</div>
+                                                        <div class="pubcite"><span class="label label-warning">Journal Paper</span>  EUROPEAN JOURNAL OF NUCLEAR MEDICINE AND MOLECULAR IMAGING </div>
+                                                        
+                                                    </div>
+
+                                                </div>
+											
+											
+												<div class="item mix jpaper" data-year="2021">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://jnm.snmjournals.org/content/62/supplement_1/36.abstract" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                         
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Unsupervised background removal by dual-modality PET/CT guidance: application to PSMA imaging of metastases</h4>
+                                                        <div class="pubauthor">I Klyuzhin, Y Xu, S Harsini, <strong>A Ortiz</strong>, C Uribe, JL Ferres, A Rahmim</div>
+                                                        <div class="pubcite"><span class="label label-warning">Journal Paper</span>  Journal of Nuclear Medicine</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> Supervised detection and segmentation of metastatic cancer lesions is an area of active research in medical imaging, including targeted PET/CT imaging of prostate-specific membrane antigen (PSMA). However, due to the unpredictable location of metastasis occurrence, supervised learning methods may require very large collections of segmented images to achieve high levels of performance. Building such datasets requires significant time and resources. Alternatively, we aimed to develop a novel unsupervised framework for subtracting healthy tracer uptake patterns via deep learning and dual-modality PET/CT guidance, with application to PSMA PET imaging. After the removal of normal background, cancer metastases become more prominent in the residual images. Our method does not require existing lesion segmentations and can leverage lesion-negative images.</p>
+														</div>
+                                                </div>
+											
+												<div class="item mix ppaper" data-year="2021">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://www.medrxiv.org/content/10.1101/2021.02.11.20196766.abstract" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="https://www.medrxiv.org/content/10.1101/2021.02.11.20196766.full.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Deep learning models for COVID-19 chest x-ray classification: Preventing shortcut learning using feature disentanglement</h4>
+                                                        <div class="pubauthor">Caleb Robinson, Anusua Trivedi, Marian Blazes, <strong>Anthony Ortiz</strong>, Jocelyn Desbiens, Sunil Gupta, Rahul Dodhia, Pavan K Bhatraju, W Conrad Liles, Aaron Lee, Jayashree Kalpathy-Cramer, Juan M Lavista Ferres</div>
+                                                        <div class="pubcite"><span class="label label-warning">Preprint</span>  medRxiv</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>In response to the COVID-19 global pandemic, recent research has proposed creating deep learning based models that use chest radiographs (CXRs) in a variety of clinical tasks to help manage the crisis. However, the size of existing datasets of CXRs from COVID-19+ patients are relatively small, and researchers often pool CXR data from multiple sources, for example, using different x-ray machines in various patient populations under different clinical scenarios. Deep learning models trained on such datasets have been shown to overfit to erroneous features instead of learning pulmonary characteristics -- a phenomenon known as shortcut learning. We propose adding feature disentanglement to the training process, forcing the models to identify pulmonary features from the images while penalizing them for learning features that can discriminate between the original datasets that the images come from. We find that models trained in this way indeed have better generalization performance on unseen data; in the best case we found that it improved AUC by 0.13 on held out data. We further find that this outperforms masking out non-lung parts of the CXRs and performing histogram equalization, both of which are recently proposed methods for removing biases in CXR datasets.</p>
+														</div>
+                                                </div>
+											
+												<div class="item mix cpaper" data-year="2020">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://link.springer.com/chapter/10.1007/978-3-030-58574-7_32" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="https://arxiv.org/pdf/2004.11498" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Mining self-similarity: Label super-resolution with epitomic representations</h4>
+                                                        <div class="pubauthor">Nikolay Malkin, <strong>Anthony Ortiz</strong>, Caleb robinson, Nebojsa Jojic </div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span>  Proceedings of the IEEE/CVF European Conference on Computer Vision (ECCV), 2020</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>We show that simple patch-based models, such as epitomes (Jojic et al., 2003), can have superior performance to the current state of the art in semantic segmentation and label super-resolution, which uses deep convolutional neural networks. We derive a new training algorithm for epitomes which allows, for the first time, learning from very large data sets and derive a label super-resolution algorithm as a statistical inference over epitomic representations. We illustrate our methods on land cover mapping and medical image analysis tasks.</p>
+														</div>
+                                                </div>
+												
+												<div class="item mix cpaper" data-year="2020">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="http://openaccess.thecvf.com/content_CVPR_2020/html/Ortiz_Local_Context_Normalization_Revisiting_Local_Normalization_CVPR_2020_paper.html" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Ortiz_Local_Context_Normalization_Revisiting_Local_Normalization_CVPR_2020_paper.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Local Context Normalization: Revisiting Local Normalization</h4>
+                                                        <div class="pubauthor"><strong>Anthony Ortiz</strong>, Caleb robinson, Dan Morris, Olac Fuentes, Christopher Kiekintveld, Mahmudulla Hassan, Nebojsa Jojic </div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span>  Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Seattle, WA, 2020</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>We propose incorporating human labelers in a model fine-tuning system that provides immediate user feedback. In our framework, human labelers can interactively query model predictions on unlabeled data, choose which data to label, and see the resulting effect on the model's predictions. This bi-directional feedback loop allows humans to learn how the model responds to new data. Our hypothesis is that this rich feedback allows human labelers to create mental models that enable them to better choose which biases to introduce to the model. We compare human-selected points to points selected using standard active learning methods. We further investigate how the fine-tuning methodology impacts the human labelers' performance. We implement this framework for fine-tuning high-resolution land cover segmentation models. Specifically, we fine-tune a deep neural network -- trained to segment high-resolution aerial imagery into different land cover classes in Maryland, USA -- to a new spatial area in New York, USA. The tight loop turns the algorithm and the human operator into a hybrid system that can produce land cover maps of a large area much more efficiently than the traditional workflows. Our framework has applications in geospatial machine learning settings where there is a practically limitless supply of unlabeled data, of which only a small fraction can feasibly be labeled through human efforts.</p>
+														</div>
+                                                </div>
+											
+												<div class="item mix cpaper" data-year="2020">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="papers/milcom.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Human-Machine Collaboration for Fast Land Cover Mapping</h4>
+                                                        <div class="pubauthor">Caleb robinson, <strong>Anthony Ortiz</strong>, Kolya Malkin, Blake Elias, Andi Peng, Dan Morris, Bistra Dilkina, Nebojsa Jojic </div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span>  Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), New York, NY, 2020</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Normalization layers have been shown to improve convergence in deep neural networks, and even add useful inductive biases. In many vision applications the local spatial context of the features is important, but most common normalization schemes including Group Normalization (GN), Instance Normalization (IN), and Layer Normalization (LN) normalize over the entire spatial dimension of a feature. This can wash out important signals and degrade performance. For example, in applications that use satellite imagery, input images can be arbitrarily large; consequently, it is nonsensical to normalize over the entire area. Positional Normalization (PN), on the other hand, only normalizes over a single spatial position at a time. A natural compromise is to normalize features by local context, while also taking into account group level information. In this pa-per, we propose Local Context Normalization (LCN): a normalization layer where every feature is normalized based on a window around it and the filters in its group. We propose an algorithmic solution to make LCN efficient for arbitrary window sizes, even if every point in the image has a unique window. LCN outperforms its Batch Normalization (BN), GN, IN, and LN counterparts for object detection, semantic segmentation, and instance segmentation applications in several benchmark datasets, while keeping performance in-dependent of the batch size and facilitating transfer learning.</p>
+														</div>
+                                                </div>
+											
+												<div class="item mix wpaper" data-year="2019">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Interpreting Black-Box Semantic Segmentation Models in Remote Sensing Applications</h4>
+                                                        <div class="pubauthor">Adriana Janik, Kris Sankaran, <strong>Anthony Ortiz</strong></div>
+                                                        <div class="pubcite"><span class="label label-warning">Workshop Paper</span>  Machine Learning Methods in Visualisation for Big Data, 2019</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>In the interpretability literature, attention is focused on understanding black-box classifiers, but many problems ranging from medicine through agriculture and crisis response in humanitarian aid are tackled by semantic segmentation models. The absence of interpretability for these canonical problems in computer vision motivates this study. In this study we present a usercentric approach that blends techniques from interpretability, representation learning, and interactive visualization. It allows to visualize and link latent representation to real data instances as well as qualitatively assess strength of predictions. We have applied our method to a deep learning model for semantic segmentation, U-Net, in a remote sensing application of building detection. This application is of high interest for humanitarian crisis response teams that rely on satellite images analysis. </p>
+														</div>
+                                                </div>
+												
+											
+											
+												<div class="item mix wpaper" data-year="2018">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                            
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Foundational mapping of Uganda to assist American Red Cross disaster response to floods and pandemics</h4>
+                                                        <div class="pubauthor">Alexei Bastidas, Matthew Beale, Yoshua Bengio, Anna Bethke, Pablo Fonseca, Jason Jo, Dale Kunce, Sean McPherson, Vincent Michalski, <strong>Anthony Ortiz</strong>, Kris Sankaran, Hanlin Tang</div>
+                                                        <div class="pubcite"><span class="label label-warning">Workshop Paper</span>  AI for Social Good, help in cojunction with NeurIPS 2018, Montreal, QC, December 2018.</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Preparing and responding to humanitarian disasters requires accurate and timely mapping of affected regions. Foundational data such as roads, waterways, population settlements are critical in mapping evacuation routes, community gathering points, and resource allocation. Current approaches require time-intensive manual labeling from teams of crowdsource human volunteers, such as the Humanitarian OpenStreetMap Team (HOT). We are partnering with the American Red Cross to explore how machine learning techniques can be leveraged to automate the generation of accurate foundational maps from remote sensing data. Here, we describe two critical Red Cross missions in Uganda, our proposed application of machine learning, and the constraints and challenges we anticipate to encounter in deployment and evaluation. The American Red Cross described two missions where effectiveness is hampered by the lack of accurate foundational data: Pandemic Response: Containing outbreaks of diseases endemic to the region, such as viral hemorrhagic fevers, requires accessible facilities to act as local outposts to coordinate the response, and train healthcare workers. Severe flooding: Heavy rainfall can cause disruptive flooding in Uganda, rendering transportation infrastructure unusable and displacing hundreds of thousands of people, who often rely on emergency relief for food and clean water. These events are expected to become more frequent due to climate change. Flooding that coincides with outbreaks could exacerbate pandemics by disrupting communities’ evacuation routes and hindering aid organizations’ ability to bring in needed supplies. Quickly identifying viable infrastructure after flooding would accelerate the ability of aid organizations to respond. For both types of emergencies, well-annotated, reliable maps can provide emergency preparedness teams with crucial information needed to successfully and hastily conduct their missions. </p>
+														</div>
+                                                </div>
+											
+											
+										
+											
+												<div class="item mix cpaper" data-year="2018">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="papers/milcom.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">On the Defense Against Adversarial Examples Beyond the Visible Spectrum</h4>
+                                                        <div class="pubauthor"><strong>Anthony Ortiz</strong>, Olac Fuentes, Dalton Rosario, Christopher Kiekintveld</div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span> MILCOM 2018, Los Angeles, California, October 2018.</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> Machine learning (ML) models based on RGB images are vulnerable to adversarial attacks, representing a potential cyber threat to the user. Adversarial examples are inputs maliciously constructed to induce errors by ML systems at test time. Recently, researchers also showed that such attacks can be successfully applied at test time to ML models based on multispectral imagery, suggesting this threat is likely to extend to the hyperspectral data space as well. Military communities across the world continue to grow their investment portfolios in multispectral and hyperspectral remote sensing, while expressing their interest in machine learning based systems. This paper aims at increasing the military community’s awareness of the adversarial threat and also in proposing ML training strategies and resilient solutions for state of the art artificial neural networks. Specifically, the paper introduces an adversarial detection network that explores domain specific knowledge of material response in the shortwave infrared spectrum, and a framework that jointly integrates an automatic band selection method for multispectral imagery with adversarial training and adversarial spectral rule-based detection. Experiment results show the effectiveness of the approach in an automatic semantic segmentation task using Digital Globe’s WorldView-3 satellite 16- band imagery.</p>
+                                                    </div>
+                                                </div>
+												
+												<div class="item mix wpaper" data-year="2018">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            
+                                                            <a href="papers/whispers_18.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+															
+														</div>
+
+                                                        <h4 class="pubtitle">3D Terrain Segmentation in the SWIR Spectrum</h4>
+                                                        <div class="pubauthor">Dalton Rosario, <strong>Anthony Ortiz</strong>, and Olac Fuentes</div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span>IEEE Workshop on Hyperspectral Image and Signal Processing Conference (WHISPERS 2018), Amsterdam, The Netherlands, September 2018.</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> We focus on the automatic 3D terrain segmentation problem using hyperspectral shortwave IR (HS-SWIR) imagery and 3D Digital Elevation Models (DEM). The datasets were independently collected, and metadata for the HS-SWIR dataset are unavailable. We explore an overall slope of the SWIR spectrum that correlates with the presence of moisture in soil to propose a band ratio test to be used as a proxy for soil moisture content to distinguish two broad classes of objects: live vegetation from impermeable manmade surface. We show that image based localization techniques combined with the Optimal Randomized RANdom Sample Consensus (RANSAC) algorithm achieve precise spatial matches between HS-SWIR data of a portion of downtown Los Angeles (LA (USA)) and the Visible image of a geo-registered 3D DEM, covering a wider-area of LA. Our spectral-elevation rule based approach yields an overall accuracy of 97.7%, segmenting the object classes into buildings, houses, trees, grass, and roads/parking lots.</p>
+                                                    </div>
+                                                </div>
+											
+												<div class="item mix cpaper" data-year="2018">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="http://www.cs.utep.edu/ofuentes/papers/CVPRW_ortiz.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Integrated Learning and Feature Selection for Deep Neural Networks in Multispectral Images</h4>
+                                                        <div class="pubauthor"><strong>Anthony Ortiz</strong>, Alonso Granados, Olac Fuentes, Christopher Kiekintveld, Dalton Rosario, Zachary Bell</div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span> 14th IEEE Workshop on Perception Beyond the Visible Spectrum, held in conjunction with Conference on Computer Vision and Pattern Recognition (CVPR 2018), Salt Lake City, Utah, June 2018.</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> The curse of dimensionality is a well-known phenomenon
+that arises when applying machine learning algorithms
+to highly-dimensional data; it degrades performance
+as a function of increasing dimension. Due to the high data
+dimensionality of multispectral and hyperspectral imagery,
+classifiers trained on limited samples with many spectral
+bands tend to overfit, leading to weak generalization capability.
+In this work, we propose an end-to-end framework
+to effectively integrate input feature selection into the training
+procedure of a deep neural network for dimensionality
+reduction. We show that Integrated Learning and Feature
+Selection (ILFS) significantly improves performance on
+neural networks for multispectral imagery applications. We
+also evaluate the proposed methodology as a potential defense
+against adversarial examples, which are malicious inputs
+carefully designed to fool a machine learning system.
+Our experimental results show that methods for generating
+adversarial examples designed for RGB space are also effective
+for multispectral imagery and that ILFS significantly
+mitigates their effect.</p>
+                                                    </div>
+                                                </div>
+												
+												<div class="item mix cpaper" data-year="2018">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://spie.org/SID/conferencedetails/algorithms-multispectral-hyperspectral-ultraspectral-imagery" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="papers/spie_anthony_18.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Spectral-elevation data registration using visible-SWIR spatial correspondence</h4>
+                                                        <div class="pubauthor">Dalton Rosario, <strong>Anthony Ortiz</strong></div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span> SPIE Defense and Comercial Sensing 2018, Orlando, Florida, April 2018.</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> We focus on the problem of spatial feature correspondence between images generated by sensors operating in different regions of the spectrum, in particular the Visible (Vis: 0.4-0.7 m) and Shortwave Infrared (SWIR: 1.0-2.5 m). Under the assumption that only one of the available datasets is geospatial ortho-rectified (e.g., Vis), this spatial correspondence can play a major role in enabling a machine to automatically register SWIR and Vis images, representing the same swath, as the first step toward achieving a full geospatial ortho-rectification of, in this case, the SWIR dataset. Assuming further that the Vis images are associated with a Lidar derived Digital Elevation Model (DEM), corresponding local spatial features between SWIR and Vis images can also lead to the association of all of the additional data available in these sets, to include SWIR hyperspectral and elevation data. Such a data association may also be interpreted as data fusion from these two sensing modalities: hyperspectral and Lidar. We show that, using the Scale Invariant Feature Transformation (SIFT) and Optimal Randomized RANdom Sample Consensus (RANSAC) algorithm, a software method can successfully find spatial correspondence between SWIR and Vis images for a complete pixel by pixel alignment. Our method is validated through an experiment using a large SWIR hyperspectral data cube, representing a portion of Los Angeles, California, and a DEM with associated Vis images covering a significantly wider area of Los Angeles.</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="item mix cpaper" data-year="2017">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="http://ieeexplore.ieee.org/document/8127882/" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="http://www.cs.utep.edu/ofuentes/papers/igarss_ortiz.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle"> Image-based 3D Model and Hyperspectral Data Fusion for Improved Scene understanding</h4>
+                                                        <div class="pubauthor"><strong>Anthony Ortiz</strong>, Dalton Rosario, Olac Fuentes, Blair Simon</div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span> IEEE International Geoscience and Remote Sensing Symposium (IGARSS 2017), Fort Worth, Texas, USA, July 2017</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> We address the problem of automatically fusing hyperspectral
+data of a digitized scene with an image-based 3D
+model, overlapping the same scene, in order to associate material
+spectra with corresponding height information for improved
+scene understanding. The datasets have been independently
+collected at different spatial resolutions by different
+aerial platforms and the georegistration information about
+the datasets is assumed to be insufficient or unavailable. We
+propose a method to solve the fusion problem by associating
+Scale Invariant Feature Transform (SIFT) descriptors from
+the hyperspectral data with the corresponding 3D point cloud
+in a large scale 3D model. We find the correspondences effi-
+ciently without affecting matching performance by limiting
+the initial search space to the centroids obtained after performing
+k-means clustering. Finally, we apply the Optimal
+Randomized RANdom Sample Consensus (RANSAC) algorithm
+to enforce geometric alignment of the hyperspectral images
+onto the 3D model. We present preliminary results that
+show the effectiveness of the method using two large datasets
+collected from drone-based sensors in an urban setting.</p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </body>
+</html>
+
