@@ -31,4 +31,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set footer year
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
+
+  // Email obfuscation: build mailto on demand from data-attrs (no plain address in HTML)
+  document.querySelectorAll('.email[data-user][data-domain]').forEach(el => {
+    el.style.cursor = 'pointer';
+    el.title = 'Click to email';
+    el.setAttribute('role', 'button');
+    el.setAttribute('tabindex', '0');
+    const open = () => {
+      const addr = el.dataset.user + '\u0040' + el.dataset.domain;
+      window.location.href = 'mai' + 'lto:' + addr;
+    };
+    el.addEventListener('click', open);
+    el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  });
 });
