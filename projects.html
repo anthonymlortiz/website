@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Research · Anthony Ortiz, PhD</title>
-  <meta name="description" content="Research projects led by Anthony Ortiz at the Microsoft AI for Good Lab." />
+  <meta name="description" content="Research projects led by Anthony Ortiz at the Microsoft AI for Good Lab — geospatial ML, medical imaging, computer vision." />
   <link rel="shortcut icon" href="favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
@@ -28,57 +28,154 @@
   <main class="container">
     <section class="block">
       <h2 class="section-title">Research</h2>
-      <p class="muted">Selected research themes and projects. Most are joint work with collaborators across Microsoft and academic partners.</p>
+      <p class="muted">
+        My work sits at the intersection of <strong>machine learning, computer vision, and remote sensing</strong>,
+        with deep collaborations across health, sustainability, and humanitarian partners. Below is a snapshot of
+        the projects I've led or co-led — see <a href="publication.html">Publications</a> for the full record.
+      </p>
+    </section>
 
-      <div class="cards" style="margin-top: 16px;">
+    <section class="block">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="work">
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/solar_farms.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Earth Observation · Sustainability</span>
+            <h3>National-scale Solar Energy Mapping (India)</h3>
+            <p>An AI dataset of every utility-scale solar installation in India, built from satellite imagery to
+              inform renewable-energy policy and land-use planning. Joint work with The Nature Conservancy.</p>
+            <div class="links">
+              <a href="https://www.nature.com/articles/s41597-022-01499-9">Scientific Data 2022</a>
+              <a href="https://analyticsindiamag.com/now-an-ai-model-that-identifies-where-solar-farms-are-located-in-india/">Press</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/glacier.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Earth Observation · Climate</span>
+            <h3>Mapping Glacial Melt in the Himalaya</h3>
+            <p>Open data and ML pipelines for monitoring the Hindu Kush Himalaya glaciers — supported by an
+              $18,000 Microsoft AI Research Grant and featured by Microsoft On the Issues.</p>
+            <div class="links">
+              <a href="https://news.microsoft.com/on-the-issues/2021/01/12/ai-open-data-glacial-melt-himalaya/">Microsoft On the Issues</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/whales.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Conservation · Biodiversity</span>
+            <h3>Wildlife Detection from Space</h3>
+            <p>Detecting beached whales, cattle, and elk in very-high-resolution satellite imagery to support
+              biodiversity monitoring and conservation partners.</p>
+            <div class="links">
+              <a href="https://arxiv.org/abs/2106.15448">arXiv 2021</a>
+              <a href="https://www.theatlantic.com/science/archive/2022/01/satellites-can-now-spot-beached-whales-space/621340/">The Atlantic</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/felicia.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Health · Privacy</span>
+            <h3>FELICIA — Federated Generative Modeling for Medical Imaging</h3>
+            <p>A framework that lets hospitals share <em>useful synthetic</em> medical images without exposing
+              patient data, by training generative models with a centralized adversary.</p>
+            <div class="links">
+              <a href="https://dl.acm.org/doi/10.1145/3462203.3475875">GoodIT 2021</a>
+              <a href="https://venturebeat.com/2021/01/20/microsofts-felicia-taps-ai-to-enable-health-providers-to-share-data-anonymously/">VentureBeat</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/syria.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Humanitarian · Justice</span>
+            <h3>AI for Syria War-Crimes Investigations</h3>
+            <p>Tools and methods that help human-rights organizations make sense of vast troves of imagery and
+              video evidence — featured in <em>The Wall Street Journal</em>.</p>
+            <div class="links">
+              <a href="https://www.wsj.com/articles/ai-emerges-as-crucial-tool-for-groups-seeking-justice-for-syria-war-crimes-11613228401">WSJ</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/lcm.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Human-in-the-loop · Earth Observation</span>
+            <h3>Human–Machine Land-Cover Mapping</h3>
+            <p>Interactive systems where humans and ML models collaborate to produce robust land-cover maps that
+              generalize across geographically diverse regions.</p>
+            <div class="links">
+              <a href="https://ojs.aaai.org/index.php/AAAI/article/view/5481">AAAI 2020</a>
+              <a href="https://ieeexplore.ieee.org/document/9554636">IGARSS 2021</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/lcn.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Core ML · CVPR 2020</span>
+            <h3>Local Context Normalization</h3>
+            <p>A drop-in normalization layer that revisits local normalization for dense-prediction networks,
+              improving generalization and robustness in semantic segmentation.</p>
+            <div class="links">
+              <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Ortiz_Local_Context_Normalization_Revisiting_Local_Normalization_CVPR_2020_paper.html">CVPR Paper</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/redcross.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Humanitarian · Disaster Response</span>
+            <h3>Foundational Mapping for the American Red Cross</h3>
+            <p>Building maps of vulnerable communities in Uganda from satellite imagery to support flood and
+              pandemic response operations.</p>
+            <div class="links">
+              <a href="https://arxiv.org/abs/1903.12421">ICLR Workshop 2019</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="section-title">Other Research Themes</h2>
+      <div class="cards">
         <div class="card">
-          <img class="cover" src="img/lab/glacier.jpg" alt="" />
-          <h3>Geospatial Foundation Models &amp; Earth Observation</h3>
-          <p>Scaling self-supervised and foundation models for satellite imagery to power downstream tasks like land cover, change detection, and species monitoring.</p>
-          <div class="meta"><a href="https://www.microsoft.com/en-us/research/project/geospatial-machine-learning/">Project page →</a></div>
+          <h3>Geospatial Foundation Models</h3>
+          <p class="muted">Self-supervised pretraining and foundation models tailored to multispectral, multi-temporal Earth-observation data — see <a href="https://github.com/microsoft/torchgeo">TorchGeo</a>.</p>
         </div>
-
         <div class="card">
-          <img class="cover" src="img/lab/solar_farms.jpg" alt="" />
-          <h3>AI for Renewable Energy Mapping</h3>
-          <p>Detecting and tracking utility-scale solar installations from satellite imagery to inform energy policy and sustainability planning.</p>
-          <div class="meta"><a href="https://www.nature.com/articles/s41597-022-01499-9">Scientific Data, 2022 →</a></div>
+          <h3>Change Detection &amp; Reality Checks</h3>
+          <p class="muted">Rigorous evaluation of purported advances in remote-sensing change detection (<a href="https://arxiv.org/abs/2402.06994">arXiv 2024</a>); temporal cluster matching for structures (<a href="https://dl.acm.org/doi/10.1145/3460112.3471849">COMPASS 2021</a>).</p>
         </div>
-
         <div class="card">
-          <img class="cover" src="img/lab/whales.jpg" alt="" />
-          <h3>Wildlife &amp; Conservation from Space</h3>
-          <p>Detecting cattle, elk, and beached whales from very-high-resolution satellite imagery to support conservation and biodiversity monitoring.</p>
-        </div>
-
-        <div class="card">
-          <img class="cover" src="img/lab/felicia.jpg" alt="" />
           <h3>Trustworthy Medical Imaging</h3>
-          <p>Federated generative modeling, robust diagnosis from chest CT/X-ray, and segmentation of cancer metastases in PSMA PET/CT.</p>
+          <p class="muted">PSMA PET/CT lesion segmentation; preventing shortcut learning in COVID-19 chest X-ray classifiers; federated and privacy-preserving training.</p>
         </div>
-
         <div class="card">
-          <img class="cover" src="img/lab/syria.jpg" alt="" />
-          <h3>AI for Humanitarian Action</h3>
-          <p>Mapping vulnerable communities and supporting humanitarian partners — from refugee family reunification to flood and pandemic response.</p>
-        </div>
-
-        <div class="card">
-          <img class="cover" src="img/lab/lcm.jpg" alt="" />
-          <h3>Human-in-the-loop Land Cover Mapping</h3>
-          <p>Interactive systems where humans and models collaborate to produce robust analyses across geographically diverse imagery.</p>
-        </div>
-
-        <div class="card">
-          <img class="cover" src="img/lab/lcn.jpg" alt="" />
-          <h3>Local Context Normalization &amp; Conditional Computation</h3>
-          <p>Architectural innovations that improve generalization and efficiency in dense prediction tasks.</p>
-        </div>
-
-        <div class="card">
-          <img class="cover" src="img/lab/adversarial.JPG" alt="" />
           <h3>Robustness &amp; Adversarial ML</h3>
-          <p>Understanding and defending deep models in remote sensing and beyond the visible spectrum.</p>
+          <p class="muted">Defenses for deep models in remote sensing and imaging modalities beyond the visible spectrum (<a href="https://ieeexplore.ieee.org/document/8599782">MILCOM 2018</a>).</p>
+        </div>
+        <div class="card">
+          <h3>Conditional Computation &amp; Efficient DL</h3>
+          <p class="muted">Architectural innovations that improve efficiency and generalization in dense-prediction tasks.</p>
+        </div>
+        <div class="card">
+          <h3>Hyperspectral &amp; Multimodal Sensing</h3>
+          <p class="muted">Fusion of hyperspectral data with image-based 3D models; spectral–elevation registration; SWIR terrain segmentation.</p>
         </div>
       </div>
     </section>

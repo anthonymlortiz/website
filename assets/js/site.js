@@ -16,16 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
   // Publication filtering
   const chips = document.querySelectorAll('.pub-controls .chip');
   const pubs = document.querySelectorAll('.pub-list .pub');
+  const applyFilter = (filter) => {
+    pubs.forEach(p => {
+      const tags = (p.dataset.tags || '').split(/\s+/);
+      p.style.display = (filter === 'all' || tags.includes(filter)) ? '' : 'none';
+    });
+    // Hide year groups that have no visible pubs
+    document.querySelectorAll('.year-group').forEach(g => {
+      const anyVisible = Array.from(g.querySelectorAll('.pub')).some(p => p.style.display !== 'none');
+      g.style.display = anyVisible ? '' : 'none';
+    });
+  };
   if (chips.length && pubs.length) {
     chips.forEach(chip => chip.addEventListener('click', () => {
       chips.forEach(c => c.classList.remove('active'));
       chip.classList.add('active');
-      const filter = chip.dataset.filter;
-      pubs.forEach(p => {
-        const tags = (p.dataset.tags || '').split(/\s+/);
-        p.style.display = (filter === 'all' || tags.includes(filter)) ? '' : 'none';
-      });
+      applyFilter(chip.dataset.filter);
     }));
+    // Apply default-active filter on load
+    const initial = document.querySelector('.pub-controls .chip.active');
+    if (initial) applyFilter(initial.dataset.filter);
   }
 
   // Set footer year

@@ -12,9 +12,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/site.css" />
-  <meta property="og:title" content="Anthony Ortiz" />
-  <meta property="og:description" content="Principal Research Scientist, Microsoft AI for Good Lab." />
-  <meta property="og:image" content="assets/img/anthonyo.jpg" />
+  <link rel="canonical" href="https://anthonymlortiz.github.io/" />
+  <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f7f9fc" media="(prefers-color-scheme: light)" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://anthonymlortiz.github.io/" />
+  <meta property="og:title" content="Anthony Ortiz, PhD — Principal Research Scientist, Microsoft AI for Good Lab" />
+  <meta property="og:description" content="Research on machine learning, computer vision, and geospatial AI for societal good — from Earth observation and climate to medical imaging and humanitarian response." />
+  <meta property="og:image" content="https://anthonymlortiz.github.io/assets/img/anthonyo.jpg" />
+  <meta property="og:image:alt" content="Portrait of Anthony Ortiz" />
+  <meta property="profile:first_name" content="Anthony" />
+  <meta property="profile:last_name" content="Ortiz" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@anthonymlortiz" />
+  <meta name="twitter:creator" content="@anthonymlortiz" />
+  <meta name="twitter:title" content="Anthony Ortiz, PhD" />
+  <meta name="twitter:description" content="Principal Research Scientist, Microsoft AI for Good Lab. ML + computer vision + geospatial AI for social good." />
+  <meta name="twitter:image" content="https://anthonymlortiz.github.io/assets/img/anthonyo.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anthony Ortiz",
+    "honorificSuffix": "PhD",
+    "jobTitle": "Principal Research Scientist",
+    "url": "https://anthonymlortiz.github.io/",
+    "image": "https://anthonymlortiz.github.io/assets/img/anthonyo.jpg",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Microsoft AI for Good Lab",
+      "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "The University of Texas at El Paso" },
+      { "@type": "CollegeOrUniversity", "name": "Pontificia Universidad Católica Madre y Maestra" }
+    ],
+    "knowsAbout": [
+      "Machine Learning",
+      "Computer Vision",
+      "Geospatial AI",
+      "Remote Sensing",
+      "Medical Imaging",
+      "AI for Social Good"
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ",
+      "https://www.linkedin.com/in/anthonyortizcepeda/",
+      "https://github.com/anthonymlortiz",
+      "https://twitter.com/anthonymlortiz"
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -47,6 +98,15 @@
             <a href="https://www.microsoft.com/en-us/research/project/geospatial-machine-learning/">geospatial machine learning</a>
             and Earth observation to medical imaging and humanitarian response.
           </p>
+          <ul class="themes" aria-label="Research themes">
+            <li>Geospatial ML</li>
+            <li>Earth Observation</li>
+            <li>Computer Vision</li>
+            <li>AI for Social Good</li>
+            <li>Climate &amp; Sustainability</li>
+            <li>Medical Imaging</li>
+            <li>Generalization &amp; Robustness</li>
+          </ul>
           <div class="cta-row">
             <a class="btn primary" href="#contact"><i class="fa-regular fa-envelope"></i> Contact</a>
             <a class="btn" href="resume.pdf"><i class="fa-regular fa-file-lines"></i> CV</a>
@@ -58,22 +118,123 @@
       </div>
     </section>
 
-    <section class="block">
-      <h2 class="section-title">Highlights</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>AI for Earth Observation</h3>
-          <p>Foundation models, change detection, land-cover mapping and species monitoring at planetary scale.</p>
+    <section class="block" aria-label="At a glance">
+      <div class="metrics">
+        <div class="metric">
+          <div class="num"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">1,200+</a></div>
+          <div class="lbl">Citations</div>
         </div>
-        <div class="card">
-          <h3>AI for Health</h3>
-          <p>Robust deep learning for medical imaging, federated generative modeling, and trustworthy clinical AI.</p>
+        <div class="metric">
+          <div class="num">20</div>
+          <div class="lbl">h-index</div>
         </div>
-        <div class="card">
-          <h3>AI for Humanitarian Action</h3>
-          <p>Mapping vulnerable communities and supporting disaster-response partners worldwide.</p>
+        <div class="metric">
+          <div class="num">35</div>
+          <div class="lbl">i10-index</div>
+        </div>
+        <div class="metric">
+          <div class="num">60+</div>
+          <div class="lbl">Publications</div>
+        </div>
+        <div class="metric">
+          <div class="num">CVPR · AAAI · ECCV · Nature</div>
+          <div class="lbl">Venues</div>
         </div>
       </div>
+    </section>
+
+    <section class="block">
+      <h2 class="section-title">Selected Work</h2>
+      <p class="muted">A few projects I'm proud of. See <a href="research.html">Research</a> for more and <a href="publication.html">Publications</a> for the full list.</p>
+      <div class="work" style="margin-top: 16px;">
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/solar_farms.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Earth Observation · 2022</span>
+            <h3>An AI inventory of every utility-scale solar farm in India</h3>
+            <p>National-scale dataset built from satellite imagery to inform renewable-energy policy and siting decisions.</p>
+            <div class="links">
+              <a href="https://www.nature.com/articles/s41597-022-01499-9">Scientific Data</a>
+              <a href="https://analyticsindiamag.com/now-an-ai-model-that-identifies-where-solar-farms-are-located-in-india/">Press</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/glacier.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Earth Observation · 2021</span>
+            <h3>Tracking glacial melt at the top of the world</h3>
+            <p>Open data and ML to monitor the Hindu Kush Himalaya glaciers — work funded by an $18K Microsoft AI Research Grant.</p>
+            <div class="links">
+              <a href="https://news.microsoft.com/on-the-issues/2021/01/12/ai-open-data-glacial-melt-himalaya/">Microsoft On the Issues</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/whales.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Conservation · 2022</span>
+            <h3>Detecting beached whales (and elk and cattle) from space</h3>
+            <p>Very-high-resolution satellite imagery + deep learning for biodiversity and wildlife monitoring at scale.</p>
+            <div class="links">
+              <a href="https://www.theatlantic.com/science/archive/2022/01/satellites-can-now-spot-beached-whales-space/621340/">The Atlantic</a>
+              <a href="https://arxiv.org/abs/2106.15448">arXiv</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/felicia.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Health · 2021</span>
+            <h3>FELICIA: federated generative modeling of medical images</h3>
+            <p>Letting hospitals share usable synthetic medical data without exposing patients — featured in VentureBeat.</p>
+            <div class="links">
+              <a href="https://dl.acm.org/doi/10.1145/3462203.3475875">GoodIT '21</a>
+              <a href="https://venturebeat.com/2021/01/20/microsofts-felicia-taps-ai-to-enable-health-providers-to-share-data-anonymously/">VentureBeat</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/syria.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Humanitarian · 2021</span>
+            <h3>AI for Syria war-crimes investigations</h3>
+            <p>Tools that help human-rights groups make sense of vast troves of evidence — covered by the WSJ.</p>
+            <div class="links">
+              <a href="https://www.wsj.com/articles/ai-emerges-as-crucial-tool-for-groups-seeking-justice-for-syria-war-crimes-11613228401">WSJ</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="cover" src="assets/img/research/lcn.jpg" alt="" />
+          <div class="body">
+            <span class="tag">Core ML · CVPR 2020</span>
+            <h3>Local Context Normalization</h3>
+            <p>A drop-in normalization layer that improves generalization of dense-prediction networks across geographies.</p>
+            <div class="links">
+              <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Ortiz_Local_Context_Normalization_Revisiting_Local_Normalization_CVPR_2020_paper.html">CVPR Paper</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="section-title">News</h2>
+      <ul class="news">
+        <li><span class="date">Mar 2024</span><span class="what">Promoted to <strong>Principal Research Scientist</strong> at the Microsoft AI for Good Lab.</span></li>
+        <li><span class="date">2025</span><span class="what">New paper: <a href="https://dl.acm.org/doi/10.1145/3719697">TorchGeo: Deep Learning with Geospatial Data</a> in <em>ACM TSAS</em>.</span></li>
+        <li><span class="date">Feb 2024</span><span class="what">Preprint out: <a href="https://arxiv.org/abs/2402.06994">A Change Detection Reality Check</a> — a sobering benchmark for remote-sensing change detection.</span></li>
+        <li><span class="date">2023</span><span class="what">Paper accepted in <em>Computers in Biology and Medicine</em>: weighted batch-wise dice loss for prostate-cancer metastasis segmentation in PSMA PET/CT.</span></li>
+        <li><span class="date">Sept 2021</span><span class="what">Promoted to Senior Research Scientist at Microsoft AI for Good.</span></li>
+      </ul>
     </section>
 
     <section class="block">
@@ -139,6 +300,451 @@
         </div>
       </div>
     </section>
+    <section class="block" id="publications">
+      <h2 class="section-title">Publications</h2>
+      <p class="muted">
+        A curated list grouped by year. Citation counts are snapshots from
+        <a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">Google Scholar</a>; see Scholar for the complete record.
+      </p>
+      <div class="pub-controls" role="tablist" aria-label="Filter publications">
+        <button class="chip active" data-filter="selected" role="tab">Selected</button>
+        <button class="chip" data-filter="all" role="tab">All</button>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2026</h3>
+        <div class="pub-list">
+          <article class="pub" data-tags="all">
+            <h3><a href="https://ieeexplore.ieee.org/document/10000000">Core-set Selection for Data-Efficient Land Cover Segmentation</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 1</a></span></h3>
+            <p class="authors">K. Nogueira, A. Zaytar, W. Ma, R. Roscher, R. Hänsch, C. Robinson, A. Ortiz, et al.</p>
+            <p><span class="venue">IEEE Access</span></p>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/10000000">Paper</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2025</h3>
+        <div class="pub-list">
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://dl.acm.org/doi/10.1145/3719697">TorchGeo: Deep Learning with Geospatial Data</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 159</a></span></h3>
+            <p class="authors">A. J. Stewart, C. Robinson, I. A. Corley, A. Ortiz, J. M. Lavista Ferres, A. Banerjee</p>
+            <p><span class="venue">ACM Transactions on Spatial Algorithms and Systems</span></p>
+            <div class="links">
+              <a href="https://dl.acm.org/doi/10.1145/3719697">Paper</a>
+              <a href="https://github.com/microsoft/torchgeo">Code</a>
+            </div>
+          </article>
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2832878">AI-enabled Screening for Retinopathy of Prematurity in Low-Resource Settings</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 12</a></span></h3>
+            <p class="authors">A. Ortiz, S. Patiño, J. Torres, J. Mármol, C. Serafin, R. Dodhia, G. Saidman, et al.</p>
+            <p><span class="venue">JAMA Network Open</span></p>
+            <div class="links"><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2832878">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://arxiv.org/abs/2503.14860">Global Renewables Watch: A Temporal Dataset of Solar and Wind Energy from Satellite Imagery</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 5</a></span></h3>
+            <p class="authors">C. Robinson, A. Ortiz, A. Kim, R. Dodhia, A. Zolli, S. K. Nagaraju, J. Oakleaf, et al.</p>
+            <p><span class="venue">arXiv preprint</span></p>
+            <div class="links"><a href="https://arxiv.org/abs/2503.14860">arXiv</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://arxiv.org/abs/2412.07944">PGRID: Power Grid Reconstruction in Informal Developments Using High-Resolution Aerial Imagery</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 2</a></span></h3>
+            <p class="authors">S. Fobi Nsutezo, A. Gupta, D. Kebut, S. Iyer, L. Marotti, R. Dodhia, J. M. Lavista Ferres, A. Ortiz</p>
+            <p><span class="venue">WACV 2025</span></p>
+            <div class="links"><a href="https://arxiv.org/abs/2412.07944">arXiv</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://arxiv.org/abs/2501.08490">FLAVARS: A Multimodal Foundational Language and Vision Alignment Model for Remote Sensing</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 2</a></span></h3>
+            <p class="authors">I. Corley, S. Fobi Nsutezo, A. Ortiz, C. Robinson, R. Dodhia, J. M. Lavista Ferres, et al.</p>
+            <p><span class="venue">arXiv preprint</span></p>
+            <div class="links"><a href="https://arxiv.org/abs/2501.08490">arXiv</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://openaccess.thecvf.com/content/WACV2025/html/Gupta_Mapping_Refugee_Camps_with_AI_A_Benchmark_Dataset_and_Baseline_WACV_2025_paper.html">Mapping Refugee Camps with AI: A Benchmark Dataset and Baseline Models for Humanitarian Applications</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 1</a></span></h3>
+            <p class="authors">A. Gupta, A. Ortiz, S. Fobi, D. Kebut, S. Iyer, R. Dodhia, J. Lavista Ferres</p>
+            <p><span class="venue">WACV 2025</span></p>
+            <div class="links"><a href="https://openaccess.thecvf.com/content/WACV2025/html/Gupta_Mapping_Refugee_Camps_with_AI_A_Benchmark_Dataset_and_Baseline_WACV_2025_paper.html">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://arxiv.org/abs/2506.06235">Optimizing Cloud-to-GPU Throughput for Deep Learning with Earth Observation Data</a></h3>
+            <p class="authors">A. Zaytar, C. Robinson, G. A. Tadesse, T. Glazer, G. Hacheme, A. Ortiz, et al.</p>
+            <p><span class="venue">arXiv preprint</span></p>
+            <div class="links"><a href="https://arxiv.org/abs/2506.06235">arXiv</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2024</h3>
+        <div class="pub-list">
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2024.1355508/full">Land Use and Europe&rsquo;s Renewable Energy Transition: Identifying Low-Conflict Areas for Wind and Solar Development</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 41</a></span></h3>
+            <p class="authors">J. M. Kiesecker, J. S. Evans, J. R. Oakleaf, K. Z. Dropuljić, I. Vejnović, C. Rosslowe, A. Ortiz, et al.</p>
+            <p><span class="venue">Frontiers in Environmental Science</span></p>
+            <div class="links"><a href="https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2024.1355508/full">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://arxiv.org/abs/2402.06994">A Change Detection Reality Check</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 25</a></span></h3>
+            <p class="authors">I. Corley, C. Robinson, A. Ortiz</p>
+            <p><span class="venue">arXiv preprint</span></p>
+            <div class="links"><a href="https://arxiv.org/abs/2402.06994">arXiv</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://arxiv.org/abs/2401.06762">Seeing the Roads Through the Trees: A Benchmark for Modeling Spatial Dependencies with Aerial Imagery</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 5</a></span></h3>
+            <p class="authors">C. Robinson, I. Corley, A. Ortiz, R. Dodhia, J. M. Lavista Ferres, P. Najafirad</p>
+            <p><span class="venue">arXiv preprint</span></p>
+            <div class="links"><a href="https://arxiv.org/abs/2401.06762">arXiv</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2023</h3>
+        <div class="pub-list">
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://www.sciencedirect.com/science/article/pii/S0010482523002184">Automatic Segmentation of Prostate Cancer Metastases in PSMA PET/CT Images Using Deep Neural Networks with Weighted Batch-wise Dice Loss</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 45</a></span></h3>
+            <p class="authors">Y. Xu, I. Klyuzhin, S. Harsini, A. Ortiz, S. Zhang, F. Bénard, R. Dodhia, et al.</p>
+            <p><span class="venue">Computers in Biology and Medicine</span></p>
+            <div class="links"><a href="https://www.sciencedirect.com/science/article/pii/S0010482523002184">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://www.mdpi.com/2077-1312/11/3/595">A Biologist&rsquo;s Guide to the Galaxy: Leveraging AI and Very-High-Resolution Satellite Imagery to Monitor Marine Mammals from Space</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 34</a></span></h3>
+            <p class="authors">C. B. Khan, K. T. Goetz, H. C. Cubaynes, C. Robinson, E. Murnane, T. Aldrich, A. Ortiz, et al.</p>
+            <p><span class="venue">Journal of Marine Science and Engineering</span></p>
+            <div class="links"><a href="https://www.mdpi.com/2077-1312/11/3/595">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://openaccess.thecvf.com/content/ICCV2023W/HADCV/html/Robinson_Rapid_Building_Damage_Assessment_Workflow_An_Implementation_for_the_2023_ICCVW_2023_paper.html">Rapid Building Damage Assessment Workflow: An Implementation for the 2023 Rolling Fork, Mississippi Tornado Event</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 12</a></span></h3>
+            <p class="authors">C. Robinson, S. Fobi Nsutezo, A. Ortiz, T. Sederholm, R. Dodhia, C. Birge, et al.</p>
+            <p><span class="venue">ICCV Workshops 2023</span></p>
+            <div class="links"><a href="https://openaccess.thecvf.com/content/ICCV2023W/HADCV/html/Robinson_Rapid_Building_Damage_Assessment_Workflow_An_Implementation_for_the_2023_ICCVW_2023_paper.html">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://www.mdpi.com/2073-445X/12/11/2049">The Road to India&rsquo;s Renewable Energy Transition Must Pass Through Crowded Lands</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 11</a></span></h3>
+            <p class="authors">J. M. Kiesecker, S. K. Nagaraju, J. R. Oakleaf, A. Ortiz, J. Lavista Ferres, et al.</p>
+            <p><span class="venue">Land</span></p>
+            <div class="links"><a href="https://www.mdpi.com/2073-445X/12/11/2049">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://dl.acm.org/doi/10.1145/3588001.3609367">Poverty Rate Prediction Using Multi-Modal Survey and Earth Observation Data</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 6</a></span></h3>
+            <p class="authors">S. Fobi, M. Cardona, E. Collins, C. Robinson, A. Ortiz, T. Sederholm, et al.</p>
+            <p><span class="venue">ACM COMPASS 2023</span></p>
+            <div class="links"><a href="https://dl.acm.org/doi/10.1145/3588001.3609367">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://arxiv.org/abs/2302.04305">Mask Conditional Synthetic Satellite Imagery</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 3</a></span></h3>
+            <p class="authors">V. A. Le, V. Reddy, Z. Chen, M. Li, X. Tang, A. Ortiz, S. Fobi Nsutezo, C. Robinson</p>
+            <p><span class="venue">arXiv preprint</span></p>
+            <div class="links"><a href="https://arxiv.org/abs/2302.04305">arXiv</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://www.microsoft.com/en-us/research/publication/turkey-earthquake-report/">Turkey Earthquake Report</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 13</a></span></h3>
+            <p class="authors">C. Robinson, R. Gupta, S. Fobi Nsutezo, E. Pound, A. Ortiz, M. Rosa, K. White, et al.</p>
+            <p><span class="venue">Microsoft Technical Report MSR-TR-2023-7</span></p>
+            <div class="links"><a href="https://www.microsoft.com/en-us/research/publication/turkey-earthquake-report/">Report</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2022</h3>
+        <div class="pub-list">
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://www.nature.com/articles/s41597-022-01499-9">An Artificial Intelligence Dataset for Solar Energy Locations in India</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 61</a></span></h3>
+            <p class="authors">A. Ortiz, D. Negandhi, S. R. Mysorekar, S. K. Nagaraju, J. Kiesecker, C. Robinson, J. M. Lavista Ferres</p>
+            <p><span class="venue">Scientific Data (Nature)</span></p>
+            <div class="links">
+              <a href="https://www.nature.com/articles/s41597-022-01499-9">Paper</a>
+              <a href="https://analyticsindiamag.com/now-an-ai-model-that-identifies-where-solar-farms-are-located-in-india/">Press</a>
+            </div>
+          </article>
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://www.nature.com/articles/s41598-022-05532-0">Effective Deep Learning Approaches for Predicting COVID-19 Outcomes from Chest Computed Tomography Volumes</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 41</a></span></h3>
+            <p class="authors">A. Ortiz, A. Trivedi, J. Desbiens, M. Blazes, C. Robinson, S. Gupta, R. Dodhia, et al.</p>
+            <p><span class="venue">Scientific Reports (Nature)</span></p>
+            <div class="links"><a href="https://www.nature.com/articles/s41598-022-05532-0">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://openaccess.thecvf.com/content/CVPR2022W/EarthVision/html/Robinson_Fast_Building_Segmentation_From_Satellite_Imagery_and_Few_Local_Labels_CVPRW_2022_paper.html">Fast Building Segmentation from Satellite Imagery and Few Local Labels</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 31</a></span></h3>
+            <p class="authors">C. Robinson, A. Ortiz, H. Park, N. Lozano, J. K. Kaw, T. Sederholm, R. Dodhia, et al.</p>
+            <p><span class="venue">CVPR Workshops 2022</span></p>
+            <div class="links"><a href="https://openaccess.thecvf.com/content/CVPR2022W/EarthVision/html/Robinson_Fast_Building_Segmentation_From_Satellite_Imagery_and_Few_Local_Labels_CVPRW_2022_paper.html">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://ieeexplore.ieee.org/document/10031179">On the Deployment of Post-Disaster Building Damage Assessment Tools Using Satellite Imagery: A Deep Learning Approach</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 31</a></span></h3>
+            <p class="authors">S. Gholami, C. Robinson, A. Ortiz, S. Yang, J. Margutti, C. Birge, R. Dodhia, et al.</p>
+            <p><span class="venue">ICDM Workshops 2022</span></p>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/10031179">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://www.sciencedirect.com/science/article/pii/S0169260722001432">Testing the Ability of Convolutional Neural Networks to Learn Radiomic Features</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 30</a></span></h3>
+            <p class="authors">I. S. Klyuzhin, Y. Xu, A. Ortiz, J. Lavista Ferres, G. Hamarneh, A. Rahmim</p>
+            <p><span class="venue">Computer Methods and Programs in Biomedicine</span></p>
+            <div class="links"><a href="https://www.sciencedirect.com/science/article/pii/S0169260722001432">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0274098">Deep Learning Models for COVID-19 Chest X-ray Classification: Preventing Shortcut Learning Using Feature Disentanglement</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 17</a></span></h3>
+            <p class="authors">A. Trivedi, C. Robinson, M. Blazes, A. Ortiz, J. Desbiens, S. Gupta, R. Dodhia, et al.</p>
+            <p><span class="venue">PLOS ONE</span></p>
+            <div class="links"><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0274098">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://ieeexplore.ieee.org/document/9745133">Mapping Glacial Lakes Using Historically Guided Segmentation Models</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 12</a></span></h3>
+            <p class="authors">A. Ortiz, W. Tian, T. C. Sherpa, F. Shrestha, M. Matin, R. Dodhia, J. M. Lavista Ferres, et al.</p>
+            <p><span class="venue">IEEE JSTARS</span></p>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/9745133">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://link.springer.com/chapter/10.1007/978-3-031-16613-6_5">Optimizing Honey Traffic Using Game Theory and Adversarial Learning</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 6</a></span></h3>
+            <p class="authors">M. S. Miah, M. Zhu, A. Granados, N. Sharmin, I. Anjum, A. Ortiz, C. Kiekintveld, et al.</p>
+            <p><span class="venue">Cyber Deception (Springer)</span></p>
+            <div class="links"><a href="https://link.springer.com/chapter/10.1007/978-3-031-16613-6_5">Chapter</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://ieeexplore.ieee.org/document/9820507">Web Service Implementation in the Object Detection on Rural Roads</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 1</a></span></h3>
+            <p class="authors">L. Barba-Guaman, A. Ortiz</p>
+            <p><span class="venue">CISTI 2022</span></p>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/9820507">Paper</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2021</h3>
+        <div class="pub-list">
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://dl.acm.org/doi/10.1145/3462203.3475875">Reducing Bias and Increasing Utility by Federated Generative Modeling of Medical Images Using a Centralized Adversary (FELICIA)</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 47</a></span></h3>
+            <p class="authors">J. F. Rajotte, S. Mukherjee, C. Robinson, A. Ortiz, C. West, J. M. Lavista Ferres, R. T. Ng</p>
+            <p><span class="venue">GoodIT &rsquo;21 · VentureBeat feature</span></p>
+            <div class="links">
+              <a href="https://dl.acm.org/doi/10.1145/3462203.3475875">Paper</a>
+              <a href="https://venturebeat.com/2021/01/20/microsofts-felicia-taps-ai-to-enable-health-providers-to-share-data-anonymously/">VentureBeat</a>
+            </div>
+          </article>
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://dl.acm.org/doi/10.1145/3461702.3462599">Becoming Good at AI for Good</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 34</a></span></h3>
+            <p class="authors">M. Kshirsagar, C. Robinson, S. Yang, S. Gholami, I. Klyuzhin, S. Mukherjee, A. Ortiz, et al.</p>
+            <p><span class="venue">AAAI/ACM AIES 2021</span></p>
+            <div class="links"><a href="https://dl.acm.org/doi/10.1145/3461702.3462599">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://www.medrxiv.org/content/10.1101/2020.10.15.20213462v3">Deep Learning Models for COVID-19 Chest X-ray Classification: Preventing Shortcut Learning Using Feature Disentanglement</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 23</a></span></h3>
+            <p class="authors">C. Robinson, A. Trivedi, M. Blazes, A. Ortiz, J. Desbiens, S. Gupta, R. Dodhia, et al.</p>
+            <p><span class="venue">medRxiv</span></p>
+            <div class="links"><a href="https://www.medrxiv.org/content/10.1101/2020.10.15.20213462v3">Preprint</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://dl.acm.org/doi/10.1145/3460112.3471865">Temporal Cluster Matching for Change Detection of Structures from Satellite Imagery</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 13</a></span></h3>
+            <p class="authors">C. Robinson, A. Ortiz, J. M. Lavista Ferres, B. Anderson, D. E. Ho</p>
+            <p><span class="venue">ACM COMPASS 2021</span></p>
+            <div class="links"><a href="https://dl.acm.org/doi/10.1145/3460112.3471865">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://arxiv.org/abs/2106.15448">Detecting Cattle and Elk in the Wild from Space</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 10</a></span></h3>
+            <p class="authors">C. Robinson, A. Ortiz, L. Hughey, J. A. Stabach, J. M. Lavista Ferres</p>
+            <p><span class="venue">arXiv preprint · The Atlantic feature</span></p>
+            <div class="links">
+              <a href="https://arxiv.org/abs/2106.15448">arXiv</a>
+              <a href="https://www.theatlantic.com/science/archive/2022/01/satellites-can-now-spot-beached-whales-space/621340/">The Atlantic</a>
+            </div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://link.springer.com/chapter/10.1007/978-3-030-72651-5_17">Object Detection in Rural Roads Through SSD and YOLO Framework</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 21</a></span></h3>
+            <p class="authors">L. Barba-Guaman, J. E. Naranjo, A. Ortiz, J. G. P. Gonzalez</p>
+            <p><span class="venue">WorldCIST 2021</span></p>
+            <div class="links"><a href="https://link.springer.com/chapter/10.1007/978-3-030-72651-5_17">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://ieeexplore.ieee.org/document/9554817">From Local Algorithms to Global Results: Human-Machine Collaboration for Robust Analysis of Geographically Diverse Imagery</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 1</a></span></h3>
+            <p class="authors">N. Jojic, N. Malkin, C. Robinson, A. Ortiz</p>
+            <p><span class="venue">IEEE IGARSS 2021</span></p>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/9554817">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://jnm.snmjournals.org/content/62/supplement_1/36">Automatic Lesion Detection and Segmentation in PSMA PET/CT Images Using Deep Neural Networks</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 2</a></span></h3>
+            <p class="authors">Y. Xu, I. Klyuzhin, S. Harsini, A. Ortiz, A. Rahmim, J. Lavista Ferres</p>
+            <p><span class="venue">European Journal of Nuclear Medicine and Molecular Imaging</span></p>
+            <div class="links"><a href="https://jnm.snmjournals.org/content/62/supplement_1/36">Abstract</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2020</h3>
+        <div class="pub-list">
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Ortiz_Local_Context_Normalization_Revisiting_Local_Normalization_CVPR_2020_paper.html">Local Context Normalization: Revisiting Local Normalization</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 40</a></span></h3>
+            <p class="authors">A. Ortiz, C. Robinson, D. Morris, O. Fuentes, C. Kiekintveld, M. Hassan, N. Jojic</p>
+            <p><span class="venue">CVPR 2020</span></p>
+            <div class="links">
+              <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Ortiz_Local_Context_Normalization_Revisiting_Local_Normalization_CVPR_2020_paper.html">Paper</a>
+              <a href="https://arxiv.org/abs/1912.05845">arXiv</a>
+            </div>
+          </article>
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://ojs.aaai.org/index.php/AAAI/article/view/5635">Human-Machine Collaboration for Fast Land-Cover Mapping</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 27</a></span></h3>
+            <p class="authors">C. Robinson, A. Ortiz, K. Malkin, B. Elias, A. Peng, D. Morris, B. Dilkina, N. Jojic</p>
+            <p><span class="venue">AAAI 2020</span></p>
+            <div class="links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/5635">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://arxiv.org/abs/2009.02787">Machine Learning for Glacier Monitoring in the Hindu Kush Himalaya</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 22</a></span></h3>
+            <p class="authors">S. Baraka, B. Akera, B. Aryal, T. Sherpa, F. Shresta, A. Ortiz, K. Sankaran, et al.</p>
+            <p><span class="venue">NeurIPS 2020 Climate Change AI Workshop</span></p>
+            <div class="links">
+              <a href="https://arxiv.org/abs/2009.02787">arXiv</a>
+              <a href="https://news.microsoft.com/on-the-issues/2021/01/12/ai-open-data-glacial-melt-himalaya/">Microsoft On the Issues</a>
+            </div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://www.mdpi.com/2079-9292/9/4/589">Deep Learning Framework for Vehicle and Pedestrian Detection in Rural Roads on an Embedded GPU</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 112</a></span></h3>
+            <p class="authors">L. Barba-Guaman, J. E. Naranjo, A. Ortiz</p>
+            <p><span class="venue">Electronics</span></p>
+            <div class="links"><a href="https://www.mdpi.com/2079-9292/9/4/589">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://link.springer.com/chapter/10.1007/978-3-030-58542-6_32">Mining Self-Similarity: Label Super-Resolution with Epitomic Representations</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 18</a></span></h3>
+            <p class="authors">N. Malkin, A. Ortiz, N. Jojic</p>
+            <p><span class="venue">ECCV 2020</span></p>
+            <div class="links"><a href="https://link.springer.com/chapter/10.1007/978-3-030-58542-6_32">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://link.springer.com/chapter/10.1007/978-3-030-64793-3_20">A Realistic Approach for Network Traffic Obfuscation Using Adversarial Machine Learning</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 11</a></span></h3>
+            <p class="authors">A. Granados, M. S. Miah, A. Ortiz, C. Kiekintveld</p>
+            <p><span class="venue">GameSec 2020</span></p>
+            <div class="links"><a href="https://link.springer.com/chapter/10.1007/978-3-030-64793-3_20">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://ieeexplore.ieee.org/document/9134168">Object Detection in Rural Roads Using TensorFlow API</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 11</a></span></h3>
+            <p class="authors">L. Barba-Guaman, J. E. Naranjo, A. Ortiz</p>
+            <p><span class="venue">ICDTI 2020</span></p>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/9134168">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://scholarworks.utep.edu/open_etd/3045/">Deep Learning for Overhead Imagery: Algorithms and Applications</a></h3>
+            <p class="authors">A. M. Ortiz Cepeda</p>
+            <p><span class="venue">Ph.D. Dissertation, The University of Texas at El Paso</span></p>
+            <div class="links"><a href="https://scholarworks.utep.edu/open_etd/3045/">Dissertation</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://ui.adsabs.harvard.edu/abs/2020AGUFMIN0240004R/abstract">Lessons Learned from Our Investments in AI for Good at Microsoft</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 1</a></span></h3>
+            <p class="authors">C. Robinson, J. Lavista Ferres, S. Yang, A. Ortiz, M. Nasir, Y. Yu, A. Trivedi</p>
+            <p><span class="venue">AGU Fall Meeting 2020</span></p>
+            <div class="links"><a href="https://ui.adsabs.harvard.edu/abs/2020AGUFMIN0240004R/abstract">Abstract</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="year-group">
+        <h3 class="year">2019 &amp; earlier</h3>
+        <div class="pub-list">
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://arxiv.org/abs/1812.01024">On the Defense Against Adversarial Examples Beyond the Visible Spectrum</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 16</a></span></h3>
+            <p class="authors">A. Ortiz, O. Fuentes, D. Rosario, C. Kiekintveld</p>
+            <p><span class="venue">MILCOM 2018</span></p>
+            <div class="links"><a href="https://arxiv.org/abs/1812.01024">arXiv</a></div>
+          </article>
+          <article class="pub" data-tags="selected all">
+            <h3><a href="https://openaccess.thecvf.com/content_cvpr_2018_workshops/w18/html/Ortiz_Integrated_Learning_and_CVPR_2018_paper.html">Integrated Learning and Feature Selection for Deep Neural Networks in Multispectral Images</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 13</a></span></h3>
+            <p class="authors">A. Ortiz, A. Granados, O. Fuentes, C. Kiekintveld, D. Rosario, Z. Bell</p>
+            <p><span class="venue">CVPR Workshops 2018</span></p>
+            <div class="links"><a href="https://openaccess.thecvf.com/content_cvpr_2018_workshops/w18/html/Ortiz_Integrated_Learning_and_CVPR_2018_paper.html">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://arxiv.org/abs/1908.00061">An Empirical Study of Batch Normalization and Group Normalization in Conditional Computation</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 17</a></span></h3>
+            <p class="authors">V. Michalski, V. Voleti, S. E. Kahou, A. Ortiz, P. Vincent, C. Pal, D. Precup</p>
+            <p><span class="venue">arXiv preprint</span></p>
+            <div class="links"><a href="https://arxiv.org/abs/1908.00061">arXiv</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://link.springer.com/chapter/10.1007/978-3-030-30464-0_8">Interpreting Black-Box Semantic Segmentation Models in Remote Sensing Applications</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 17</a></span></h3>
+            <p class="authors">A. Janik, K. Sankaran, A. Ortiz</p>
+            <p><span class="venue">Machine Learning Methods in Visualisation for Big Data</span></p>
+            <div class="links"><a href="https://link.springer.com/chapter/10.1007/978-3-030-30464-0_8">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://ieeexplore.ieee.org/document/8128310">Image-based 3D Model and Hyperspectral Data Fusion for Improved Scene Understanding</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 6</a></span></h3>
+            <p class="authors">A. Ortiz, D. Rosario, O. Fuentes, S. Blair</p>
+            <p><span class="venue">IEEE IGARSS 2017</span></p>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/8128310">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://www.sciencedirect.com/science/article/pii/S2405896319311425">An Approach of Virtual Reality Environment for Technicians Training in Upstream Sector</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 6</a></span></h3>
+            <p class="authors">C. A. Garcia, J. E. Naranjo, A. Ortiz, M. V. Garcia</p>
+            <p><span class="venue">IFAC-PapersOnLine (ACE 2019)</span></p>
+            <div class="links"><a href="https://www.sciencedirect.com/science/article/pii/S2405896319311425">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://ieeexplore.ieee.org/document/8747251">3D Terrain Segmentation in the SWIR Spectrum</a></h3>
+            <p class="authors">D. Rosario, A. Ortiz, O. Fuentes</p>
+            <p><span class="venue">IEEE WHISPERS 2018</span></p>
+            <div class="links"><a href="https://ieeexplore.ieee.org/document/8747251">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10644/106440V/Spectral-elevation-data-registration-using-visible-SWIR-spatial-correspondence/10.1117/12.2305004.short">Spectral-Elevation Data Registration Using Visible-SWIR Spatial Correspondence</a>
+              <span class="cite"><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ">cited 2</a></span></h3>
+            <p class="authors">D. Rosario, A. Ortiz</p>
+            <p><span class="venue">SPIE Defense + Security 2018</span></p>
+            <div class="links"><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10644/106440V/Spectral-elevation-data-registration-using-visible-SWIR-spatial-correspondence/10.1117/12.2305004.short">Paper</a></div>
+          </article>
+          <article class="pub" data-tags="all">
+            <h3><a href="https://arxiv.org/abs/1711.10693">Small Drone Field Experiment: Data Collection &amp; Processing</a></h3>
+            <p class="authors">D. Rosario, C. Borel, D. Conover, R. McAlinden, A. Ortiz, S. Shiver, B. Simon</p>
+            <p><span class="venue">arXiv preprint</span></p>
+            <div class="links"><a href="https://arxiv.org/abs/1711.10693">arXiv</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="block" id="contact">
       <h2 class="section-title">Contact</h2>
       <div class="cards">

@@ -17,13 +17,16 @@ static site at **www.anthonymlortiz.com** (GitHub Pages — see `CNAME`).
     properties, supports light + dark via `prefers-color-scheme`.
   - `assets/js/site.js` — vanilla JS only (mobile nav, active link, publication
     filter chips, footer year).
-- **Profile photo:** `assets/img/anthonyo.jpg` at the repo root. It is used as both the
-  navbar avatar and the hero portrait on `index.html`. Replace the file in
-  place (keep the filename and case) when updating the photo.
-- **Static content directories:** `img/`, `papers/`, `slides/`, `fonts/`,
-  `css/` (legacy), `js/` (legacy). The legacy `css/` and `js/` directories are
-  unused by the modern pages and only kept for assets that may still be linked
-  to from elsewhere; prefer `assets/` for anything new.
+- **Profile photo:** `assets/img/anthonyo.jpg`. Used as both the navbar
+  avatar and the hero portrait on `index.html`. Replace the file in place
+  (keep the path and lowercase `.jpg` extension) when updating the photo.
+- **Static content directories:**
+  - `assets/img/` — site images. Research project covers live under
+    `assets/img/research/`.
+  - `papers/` — author PDF copies of selected papers.
+- The legacy `css/`, `js/`, `fonts/`, and `img/` directories from the
+  original jQuery/Bootstrap template have been removed; do not reintroduce
+  them — put new assets under `assets/`.
 
 ## Conventions
 
