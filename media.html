@@ -1,317 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <title>Anthony Ortiz</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="author" content="owwwlab.com">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        
-        <meta name="description" content="A theme for faculty profile page" />
-        <meta name="keywords" content="faculty profile, theme,css, html, jquery, transition, transform, 3d, css3" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>In the News · Anthony Ortiz</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/img/anthonyo.jpg" alt="" /><span>Anthony Ortiz</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publication.html">Publications</a>
+        <a href="media.html">In the News</a>
+        <a href="resume.pdf">CV</a>
+      </nav>
+    </div>
+  </header>
 
-        <link rel="shortcut icon" href="../favicon.ico">
+  <main class="container">
+    <section class="block">
+      <h2 class="section-title">In the News</h2>
+      <div class="cards">
+        <a class="card" href="https://www.theatlantic.com/science/archive/2022/01/satellites-can-now-spot-beached-whales-space/621340/">
+          <h3>Satellites Are Spotting the Beached Whales We Never Would Have Found</h3>
+          <p>The Atlantic · 2022</p>
+        </a>
+        <a class="card" href="https://www.wsj.com/articles/ai-emerges-as-crucial-tool-for-groups-seeking-justice-for-syria-war-crimes-11613228401">
+          <h3>AI Emerges as Crucial Tool for Groups Seeking Justice for Syria War Crimes</h3>
+          <p>The Wall Street Journal · 2021</p>
+        </a>
+        <a class="card" href="https://news.microsoft.com/on-the-issues/2021/01/12/ai-open-data-glacial-melt-himalaya/">
+          <h3>Tracking the Effects of Glacial Melting at the Top of the World</h3>
+          <p>Microsoft On the Issues · 2021</p>
+        </a>
+        <a class="card" href="https://venturebeat.com/2021/01/20/microsofts-felicia-taps-ai-to-enable-health-providers-to-share-data-anonymously/">
+          <h3>Microsoft Researchers Tap AI for Anonymous Data Sharing in Healthcare</h3>
+          <p>VentureBeat · 2021</p>
+        </a>
+        <a class="card" href="https://analyticsindiamag.com/now-an-ai-model-that-identifies-where-solar-farms-are-located-in-india/">
+          <h3>An AI Model that Identifies Where Solar Farms Are Located in India</h3>
+          <p>Analytics India Magazine · 2022</p>
+        </a>
+        <a class="card" href="https://www.microsoft.com/en-us/ai/ai-for-humanitarian-action-projects">
+          <h3>Turkish Red Crescent Restores Refugee Family Links with AI for Humanitarian Action</h3>
+          <p>Microsoft · 2021</p>
+        </a>
+      </div>
+    </section>
+  </main>
 
-        <!--CSS styles-->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">  
-        <link rel="stylesheet" href="css/perfect-scrollbar-0.4.5.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
-
-        
-        <!--/CSS styles-->
-        <!--Javascript files-->
-        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="js/TweenMax.min.js"></script>
-        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
-        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
-        
-        <script type="text/javascript" src="js/modernizr.custom.63321.js"></script>
-        <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
-
-        <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
-
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-
-        <script type="text/javascript" src="js/masonry.min.js"></script>
-
-        <script type="text/javascript" src="js/perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
-        <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-        
-        <script type="text/javascript" src="js/magnific-popup.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
-
-        <!--/Javascript files-->
-
-    </head>
-    <body>
-
-        <div id="wrapper">
-            <a href="#sidebar" class="mobilemenu"><i class="fa fa-reorder"></i></a>
-
-            <div id="sidebar">
-                <div id="sidebar-wrapper">
-                    <div id="sidebar-inner">
-                        <!-- Profile/logo section-->
-                        <div id="profile" class="clearfix">
-                            <div class="portrate hidden-xs"></div>
-                            <div class="title">
-                                <h2>Anthony Ortiz</h2>
-                                <h3>Sr. Applied	Research Scientist Microsoft AI for Good Research</h3>
-                            </div>   
-                        </div>
-                        <!-- /Profile/logo section-->
-
-                         <!-- Main navigation-->
-                        <div id="main-nav">
-                            <ul id="navigation">
-								<li>
-                                  <a href="index.html">
-                                    <i class="fa fa-user"></i>
-                                    <div class="text">Home</div>
-                                  </a>
-                                </li>  
-                                
-                                <li>
-                                  <a href="projects.html">
-                                    <i class="fa fa-flask"></i>
-                                    <div class="text">Research</div>
-                                  </a>
-                                </li> 							
-                                
-                                <li>
-                                  <a href="publication.html">
-                                    <i class="fa fa-edit"></i>
-                                    <div class="text">Publications</div>
-                                  </a>
-                                </li> 
-
-								<li>
-                                  <a href="media.html">
-                                    <i class="fa fa-desktop"></i>
-                                    <div class="text">On The News</div>
-                                  </a>
-                                </li> 
-
-                                <li class="external">
-                                  <a href="resume.pdf">
-                                      <i class="fa fa-book"></i>
-                                      <div class="text">Curriculum Vitae</div>
-                                  </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /Main navigation-->
-                        <!-- Sidebar footer -->
-                        <div id="sidebar-footer">
-                            <div class="social-icons">
-                                <ul>
-									<li><a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ"><i class="fab fa-scholar fa-sm"></i></li>
-                                    <li><a href="https://twitter.com/anthonymlortiz"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/anthonyortizcepeda/"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-
-        
-                            <div id="copyright">©2022 Anthony Ortiz</div>
-                    
-                        </div>
-                        <!-- /Sidebar footer -->
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="main">
-				<div id="projects" class="page">
-                    <div class="pageheader">
-                        <div class="headercontent">
-                            <div class="section-container">
-                                <h2 class="title">News & Media Coverage</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pagecontents">
-                        <div class="section color-2">
-                            <div class="section-container">
-                                
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <ul class="ul-withdetails">
-
-                                            
-
-
-                                            <li>
-                                                <div class="row">
-                                                    <div class="col-sm-4 col-md-3">
-                                                        <div class="image">
-                                                            <img alt="image" src="img/lab/solar.jpg"  class="img-responsive">
-                                                            <div class="imageoverlay">
-                                                                <i class="fa fa-search"></i>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-8 col-md-9">
-                                                        <div class="meta">
-                                                            <h3> Now an AI model that identifies where solar farms are located in India </h3> <h4>   <span style="color: black; font-weight: bold;"> Source: </span><a href="https://analyticsindiamag.com/now-an-ai-model-that-identifies-where-solar-farms-are-located-in-india/"><b> Analytics India Magazine </b></a></h4>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-
-                                            
-										    <li>
-                                                <div class="row">
-                                                    <div class="col-sm-4 col-md-3">
-                                                        <div class="image">
-                                                            <img alt="image" src="img/lab/whales.jpg"  class="img-responsive">
-                                                            <div class="imageoverlay">
-                                                                <i class="fa fa-search"></i>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-8 col-md-9">
-                                                        <div class="meta">
-                                                            <h3> Satellites Are Spotting the Beached Whales We Never Would Have Found</h3> <h4>   <span style="color: black; font-weight: bold;"> Source: </span><a href="https://www.theatlantic.com/science/archive/2022/01/satellites-can-now-spot-beached-whales-space/621340/"><b> The Atlantic </b></a></h4>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-										
-											
-											
-											<li>
-                                                <div class="row">
-                                                    <div class="col-sm-4 col-md-3">
-                                                        <div class="image">
-                                                            <img alt="image" src="img/lab/felicia.jpg"  class="img-responsive">
-                                                            <div class="imageoverlay">
-                                                                <i class="fa fa-search"></i>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-8 col-md-9">
-                                                        <div class="meta">
-                                                            <h3> Microsoft researchers tap AI for anonymous data sharing for health care providers</h3> <h4>   <span style="color: black; font-weight: bold;"> Source: </span><a href="https://venturebeat.com/2021/01/20/microsofts-felicia-taps-ai-to-enable-health-providers-to-share-data-anonymously/"><b> Venturebeat </b></a></h4>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-											
-											
-											<li>
-                                                <div class="row">
-                                                    <div class="col-sm-4 col-md-3">
-                                                        <div class="image">
-                                                            <img alt="image" src="img/home.jpg"  class="img-responsive">
-                                                            <div class="imageoverlay">
-                                                                <i class="fa fa-search"></i>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-8 col-md-9">
-                                                        <div class="meta">
-                                                            <h3> Tracking the effects of glacial melting</h3> <h4>   <span style="color: black; font-weight: bold;"> Source: </span><a href="https://twitter.com/MSFTIssues/status/1355206409487589377"><b> Twitter </b></a></h4>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-											
-											<li>
-                                                <div class="row">
-                                                    <div class="col-sm-4 col-md-3">
-                                                        <div class="image">
-                                                            <img alt="image" src="img/lab/glacier.jpg"  class="img-responsive">
-                                                            <div class="imageoverlay">
-                                                                <i class="fa fa-search"></i>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-8 col-md-9">
-                                                        <div class="meta">
-                                                            <h3> Tracking the effects of glacial melting at the top of the world</h3> <h4>   <span style="color: black; font-weight: bold;"> Source: </span><a href="https://news.microsoft.com/on-the-issues/2021/01/12/ai-open-data-glacial-melt-himalaya/"><b> Microsoft On the Issues </b></a></h4>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-
-
-                                            <li>
-                                                <div class="row">
-                                                    <div class="col-sm-4 col-md-3">
-                                                        <div class="image">
-                                                            <img alt="image" src="img/lab/syria.jpg"  class="img-responsive">
-                                                            <div class="imageoverlay">
-                                                                <i class="fa fa-search"></i>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-8 col-md-9">
-                                                        <div class="meta">
-                                                            <h3> AI Emerges as Crucial Tool for Groups Seeking Justice for Syria War Crimes </h3> <h4>   <span style="color: black; font-weight: bold;"> Source: </span><a href="https://www.wsj.com/articles/ai-emerges-as-crucial-tool-for-groups-seeking-justice-for-syria-war-crimes-11613228401"><b> Wall Street Journal (WSJ) </b></a></h4>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-									
-											
-											<li>
-                                                <div class="row">
-                                                    <div class="col-sm-4 col-md-3">
-                                                        <div class="image">
-                                                            <img alt="image" src="img/lab/redcross.jpg"  class="img-responsive">
-                                                            <div class="imageoverlay">
-                                                                <i class="fa fa-search"></i>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-8 col-md-9">
-                                                        <div class="meta">
-                                                            <h3> Turkish Red Crescent restores the family links of refugees with AI for Humanitarian Action Program</h3> <h4>   <span style="color: black; font-weight: bold;"> Source: </span><a href="https://ictmedia.com.tr/en/News/Index/12314/turk-kizilay-ve-microsoft-turkiye-is-birligi-umut-veren-calisma-aile-baglarinin-yeniden-tesisi"><b> ICTMedia </b></a>  <a href="https://www.microsoft.com/en-us/ai/ai-for-humanitarian-action-projects?activetab=pivot1:primaryr6"><b>, Microsoft </b></a></</h4>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </li>
-											
-											
-											
-											
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Anthony Ortiz</div>
+      <div class="social">
+        <a href="https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ"><i class="fa-solid fa-graduation-cap"></i></a>
+        <a href="https://www.linkedin.com/in/anthonyortizcepeda/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/anthonymlortiz"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/site.js"></script>
+</body>
 </html>
-
