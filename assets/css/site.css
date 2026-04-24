@@ -149,6 +149,13 @@ h2.section-title::before {
   background: #fff; padding: 4px 6px; border-radius: 4px; border: 1px solid var(--border);
   box-sizing: content-box;
 }
+.timeline .org-logo--mark {
+  max-height: 22px; max-width: 22px;
+  background: transparent; padding: 0; border: 0;
+}
+.timeline .org-name { display: inline-flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.timeline .org-parent { color: #737373; font-weight: 600; }
+.timeline .org-sep { color: #737373; font-weight: 400; }
 .timeline .where { color: var(--fg-muted); font-size: .92rem; margin: 0 0 6px; }
 .timeline p { margin: 0; color: var(--fg); }
 .timeline .roles {
