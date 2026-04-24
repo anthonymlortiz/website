@@ -158,7 +158,6 @@ h2.section-title::before {
 .timeline .org-sep { color: #737373; font-weight: 400; }
 .timeline .org-child { color: #737373; font-weight: 600; }
 .timeline .org-child:hover { color: var(--accent); }
-.timeline .org-role { color: #737373; font-weight: 400; }
 .timeline .where { color: var(--fg-muted); font-size: .92rem; margin: 0 0 6px; }
 .timeline p { margin: 0; color: var(--fg); }
 .timeline .roles {
