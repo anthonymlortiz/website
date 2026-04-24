@@ -52,7 +52,7 @@ static site at **www.anthonymlortiz.com** (GitHub Pages — see `CNAME`).
   `publication.html`. Source of truth for the canonical list is
   <https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ>.
 - **News:** add a `.card` link in `media.html`.
-- **CV:** replace `resume.pdf` in place.
+- **CV:** replace `assets/cv/cv_ao_2025.pdf` (update the filename and the link in `index.html` if the year changes).
 - **Footer year** is set automatically by `assets/js/site.js` (`#year`).
 
 ## Don'ts
