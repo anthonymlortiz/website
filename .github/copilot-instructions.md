@@ -11,7 +11,7 @@ static site at **www.anthonymlortiz.com** (GitHub Pages — see `CNAME`).
   - `index.html` — landing page (bio, experience, education)
   - `research.html` (and the legacy alias `projects.html`) — research themes
   - `publication.html` — selected publications, filterable by topic
-  - `media.html` — press / "In the News"
+  - `media.html` — press coverage / "Media"
 - **Shared assets** live under `assets/`:
   - `assets/css/site.css` — single stylesheet, design tokens via CSS custom
     properties, supports light + dark via `prefers-color-scheme`.
@@ -51,7 +51,17 @@ static site at **www.anthonymlortiz.com** (GitHub Pages — see `CNAME`).
 - **Publications:** prepend new entries at the top of the `.pub-list` in
   `publication.html`. Source of truth for the canonical list is
   <https://scholar.google.com/citations?hl=en&user=Ix7TigcAAAAJ>.
-- **News:** add a `.card` link in `media.html`.
+- **Highlighted projects:** every "Selected Work" card added to `index.html`
+  must also be mirrored as a "Featured Projects" card in `research.html` (and
+  `projects.html`, which is kept in sync as a copy of `research.html`). The
+  index version may be a shorter blurb, but the project must exist on both
+  pages so visitors who click through to Research find it there too.
+- **News:** add a press item under the appropriate topical group in
+  `media.html` (Climate &amp; Renewable Energy, Conservation &amp; Biodiversity,
+  Health, Disaster Response &amp; Humanitarian Action). Sort items newest-first
+  within each group.
+- **News on the home page:** add an entry to the `<ul class="news">` in
+  `index.html`, sorted newest-first.
 - **CV:** replace `assets/cv/cv_ao_2025.pdf` (update the filename and the link in `index.html` if the year changes).
 - **Footer year** is set automatically by `assets/js/site.js` (`#year`).
 
