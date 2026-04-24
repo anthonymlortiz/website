@@ -317,3 +317,19 @@ hr.sep { border: 0; border-top: 1px solid var(--border); margin: 24px 0; }
 .sel-pubs .title { font-weight: 600; }
 .sel-pubs .meta { display: block; color: var(--fg-muted); font-size: .9rem; margin-top: 2px; }
 .sel-pubs .why { display: block; color: var(--fg-muted); font-size: .92rem; margin-top: 4px; font-style: italic; }
+
+/* Mentoring list */
+.mentees { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 8px; }
+.mentees li {
+  padding: 10px 14px; background: var(--bg-elev); border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* Open-source cards */
+.os-list { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.os-list li {
+  padding: 14px 16px; background: var(--bg-elev); border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.os-list .os-title { display: block; font-weight: 700; color: var(--accent); margin-bottom: 4px; }
+.os-list .os-desc { display: block; color: var(--fg-muted); font-size: .92rem; }
