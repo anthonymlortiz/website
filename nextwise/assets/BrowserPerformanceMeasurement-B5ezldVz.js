@@ -1,0 +1,1 @@
+import{BrowserPerformanceMeasurement as e}from"./dist-B0ILB_du.js";export{e as BrowserPerformanceMeasurement};
